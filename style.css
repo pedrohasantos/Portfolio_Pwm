@@ -1,9 +1,10 @@
 /* Fonte global */
 body {
     font-family: 'Cabin', sans-serif;
+    font-size: 18px; /* aumenta o tamanho base da fonte */
     margin: 0;
     padding: 0;
-    background-color: #836868; /* fundo escuro */
+    background-color: #836868;
     color: #1f1f1f;
     display: flex;
 }
@@ -70,13 +71,13 @@ nav ul li a:hover {
 
 /* Conteúdo principal */
 main {
-    margin-left: 270px; /* reserva espaço da barra lateral */
+    margin-left: 270px;
     padding: 40px;
     background-color: #e0e6ae;
     min-height: 100vh;
     box-sizing: border-box;
     color: #1f1f1f;
-    max-width: 1000px;
+    max-width: 1100px; /* mais largo */
     margin-right: auto;
     margin-left: 270px;
     border-radius: 16px;
