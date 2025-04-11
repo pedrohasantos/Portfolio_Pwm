@@ -1,0 +1,146 @@
+/* Fonte global */
+body {
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #836868; /* fundo escuro */
+    color: #1f1f1f;
+    display: flex;
+}
+
+/* Barra lateral */
+header {
+    width: 250px;
+    background-color: #bdd3b6;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    color: #1f1f1f;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #1f1f1f;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #5f0f0f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #bc3722;
+}
+
+#toggle-dark {
+    margin-top: 20px;
+    padding: 8px 12px;
+    background-color: #470000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#toggle-dark:hover {
+    background-color: #300000;
+}
+
+/* Conteúdo principal */
+main {
+    margin-left: 270px;
+    padding: 40px;
+    background-color: #e0e6ae;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: #1f1f1f;
+}
+
+/* Seções empilhadas */
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    color: #470000;
+}
+
+/* Cards de projeto */
+.grid-projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #bc3722;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fdfdfd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.card a {
+    color: #fdfdfd;
+    text-decoration: underline;
+}
+
+/* Modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode main {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #292929;
+    color: #e0e0e0;
+}
+
+body.dark-mode nav ul li a {
+    color: #f2a365;
+}
+
+body.dark-mode h2 {
+    color: #f2a365;
+}
+
+body.dark-mode .card {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .card a {
+    color: #f2a365;
+}

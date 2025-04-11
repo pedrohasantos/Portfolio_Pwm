@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Portifolio - </title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,44 +18,50 @@
                 <li><a href ="#sobreMim">Sobre Mim</a></li>
                 <li><a href ="#projetos">Meus Projetos</a></li>
                 <li><a href ="#contato">Contato</a></li>
+                <li><a href="joguinho/index.html" target="_blank">Joguinho</a></li>
             </ul>
+            <button id="toggle-dark">Alternar Modo Escuro</button>
         </nav>
     </header>
-    <!--Seção sobre mim-->    
-    <section id="sobreMim" class="sobreMim">
-        <h2>Sobre Mim:</h2>
-        <p>
-            Olá!, sou estudante de computação apaixonado por tecnologia.
-            Gosto de praticar esportes e atividades ao ar livre como ciclismo e trilhas pelos mais variados biomas, desde a mata atlântica até a caatinga. Sou aficcionado por ficção cientifica e livros de fantasia e aventura. 
-            Experiencia com linguagens de programação como C, python, Java, SQL, etc. E frameworks como react.
-            <br> Ja trabalhei antes como músico tanto como solo(voz e violão) quanto em bandas. Trabalhei como chapeiro em um bar e fiz um voluntariado para o exterior em julho de 2022.
-        </p>
-    </section>
-    <!--Seção projetos-->
-    <section id="projetos" class="projetos">
-        <h2>Projetos</h2>
-        <div class="grid-projetos">
-        <div class="card">
-            <h3>Projeto Pomodojo</h3>
-            <p>Projeto desenvolvido para auxiliar pessoas com dificuldade nos estudos,
-                promovendo a atenção e o foco com auxilio da tecnologia .
-                <br> 2024.2</p>
-            <a href="https://github.com/naoehcleber/Pomodojo" target="_blank">Ver no GitHub</a>
+    <main>
+
+        <!--Seção sobre mim-->    
+        <section id="sobreMim" class="sobreMim">
+            <h2>Sobre Mim:</h2>
+            <p>
+                Olá!, sou estudante de computação apaixonado por tecnologia.
+                Gosto de praticar esportes e atividades ao ar livre como ciclismo e trilhas pelos mais variados biomas, desde a mata atlântica até a caatinga. Sou aficcionado por ficção cientifica e livros de fantasia e aventura. 
+                Experiencia com linguagens de programação como C, python, Java, SQL, etc. E frameworks como react.
+                <br> Ja trabalhei antes como músico tanto como solo(voz e violão) quanto em bandas. Trabalhei como chapeiro em um bar e fiz um voluntariado para o exterior em julho de 2022.
+            </p>
+        </section>
+        <!--Seção projetos-->
+        <section id="projetos" class="projetos">
+            <h2>Projetos</h2>
+            <div class="grid-projetos">
+            <div class="card">
+                <h3>Projeto Pomodojo</h3>
+                <p>Projeto desenvolvido para auxiliar pessoas com dificuldade nos estudos,
+                    promovendo a atenção e o foco com auxilio da tecnologia .
+                    <br> 2024.2</p>
+                <a href="https://github.com/naoehcleber/Pomodojo" target="_blank">Ver no GitHub</a>
+            </div>
+            <div class="card">
+                <h3>Projeto Banco de dados</h3>
+                <p>Projeto desenvolvido para a construção de um banco de dados que oferece uma interface para upload e gerenciamento de arquivos, 
+                    com funcionalidades como criação, atualização, remoção e visualização de arquivos .
+                    <br> 2024.2
+                </p>
+                    <a href="https://github.com/Anabia-05/ProjetoBD" target="_blank">Ver no GitHub</a>
+          </div>
         </div>
-        <div class="card">
-            <h3>Projeto Banco de dados</h3>
-            <p>Projeto desenvolvido para a construção de um banco de dados que oferece uma interface para upload e gerenciamento de arquivos, 
-                com funcionalidades como criação, atualização, remoção e visualização de arquivos .</p>
-                <br> 2024.2
-                <a href="https://github.com/Anabia-05/ProjetoBD" target="_blank">Ver no GitHub</a>
-      </div>
-    </div>
-    </section>
-    <!--Seção contato-->
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
-        Email: <a href="mailto:afonsovich@gmail.com">afonsovich@gmail.com</a> <br>
-        
-      </section>
+        </section>
+        <!--Seção contato-->
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            Email: <a href="mailto:afonsovich@gmail.com">afonsovich@gmail.com</a> <br>
+            
+          </section>
+    </main>
 </body>
 </html>

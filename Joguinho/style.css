@@ -1,0 +1,46 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #470000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+  }
+  
+  .container {
+    background-color: #E3492D;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input {
+    width: 100px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #BC3722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #history {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #history li {
+    background-color: #952517;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

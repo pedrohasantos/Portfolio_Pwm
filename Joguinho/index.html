@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo Senha</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo Senha</h1>
+    <p>Digite um número de 4 dígitos únicos:</p>
+    <form id="guessForm">
+      <input type="text" id="guessInput" maxlength="4" pattern="\d{4}" required/>
+      <button type="submit">Enviar</button>
+    </form>
+    <button id="revealBtn">Mostrar Senha</button>
+    
+    <ul id="history"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
