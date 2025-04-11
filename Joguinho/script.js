@@ -44,9 +44,15 @@ function generateSecret() {
     // Insere no topo da lista
     history.insertBefore(entry, history.firstChild);
     input.value = '';
+
+    if (bulls === 4) {
+        setTimeout(() => {
+          alert("🎉 Parabéns! Você descobriu a senha secreta!");
+        }, 100);
+      }
   });
   
   revealBtn.addEventListener("click", () => {
-    alert(`A senha secreta é: ${secret}`);
+    alert(`Você desistiu e escolheu o jeito fácil, a senha é: ${secret}`);
   });
   

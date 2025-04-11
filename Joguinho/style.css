@@ -1,46 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
 body {
     font-family: 'Cabin', sans-serif;
-    background-color: #470000;
-    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #836868; /* fundo escuro */
+    color: #1f1f1f;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px;
-  }
-  
-  .container {
-    background-color: #E3492D;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  input {
-    width: 100px;
-    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Quadro principal */
+.container {
+    background-color: #e0e6ae;
+    max-width: 800px;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h1 {
+    color: #470000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input e botão */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
     margin-right: 10px;
-  }
-  
-  button {
-    padding: 5px 10px;
-    background-color: #BC3722;
-    color: white;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #470000;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-  }
-  
-  #history {
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #300000;
+}
+
+/* Lista de tentativas */
+#tentativas {
+    margin-top: 30px;
     list-style: none;
     padding: 0;
-    margin-top: 20px;
-  }
-  
-  #history li {
-    background-color: #952517;
+}
+
+#tentativas li {
+    background-color: #b19676;
+    color: #fff;
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 5px;
-  }
-  
+    border-radius: 8px;
+}
+
+/* Modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode input[type="text"] {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-mode button {
+    background-color: #bc3722;
+}
+
+body.dark-mode button:hover {
+    background-color: #952517;
+}
+
+body.dark-mode #tentativas li {
+    background-color: #333333;
+}
